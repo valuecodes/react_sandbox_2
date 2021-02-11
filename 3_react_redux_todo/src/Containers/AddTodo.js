@@ -12,8 +12,7 @@ export default function AddTodo() {
     }
 
     const addTodoHandler = () => {
-        console.log(inputText)
-        const newTodo={id:new Date+Math.random(),text:inputText,completed:false}
+        const newTodo={id:new Date()+(Math.random()),text:inputText,completed:false}
         dispatch(addTodo(newTodo))
         setInputText('')
     }

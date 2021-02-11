@@ -12,7 +12,7 @@
 
 .todoListItem{
     display: grid;
-    grid-template-columns: 20rem 5rem;
+    grid-template-columns: 20rem 5rem 5rem;
     grid-auto-rows: 2rem;
 }
 

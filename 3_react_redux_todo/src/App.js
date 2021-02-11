@@ -1,4 +1,4 @@
-import React,{ useEffect, useState } from 'react'
+import React,{ useEffect } from 'react'
 import './App.css';
 import AddTodo from './Containers/AddTodo';
 import TodoList from './Containers/TodoList';
@@ -14,7 +14,7 @@ function App() {
     axios.get("http://localhost:3001/todoList/").then((response) => {
       dispatch(addTodoList(response.data))
     });
-  },[])
+  },[dispatch])
 
   return (
     <div className="App">

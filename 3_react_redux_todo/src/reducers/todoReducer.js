@@ -21,6 +21,14 @@ const todoReducer = (state=initialState,action) => {
                 ...state,
                 todoList: state.todoList.filter(item => item.id !== action.payload)
             }
+        case actionTypes.UPDATE_TODO:
+            const todoIndex1 = state.todoList.findIndex(item => item.id===action.payload.id)
+            const stateCopy1 = {...state}
+            stateCopy1.todoList[todoIndex1].text = action.payload.newText
+            axios.put("http://localhost:3001/todoList/"+action.payload.id,stateCopy1.todoList[todoIndex1])
+            return {
+                ...state
+            }
         case actionTypes.ADD_TODO_LIST:
             return{
                 ...state,

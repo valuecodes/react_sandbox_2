@@ -2,18 +2,18 @@
   "todoList": [
     {
       "id": "Thu Feb 04 2021 13:50:02 GMT+0200 (Eastern European Standard Time)0.19678156357868826",
-      "text": "1234",
+      "text": "test",
       "completed": false
     },
     {
       "id": "Thu Feb 04 2021 13:50:08 GMT+0200 (Eastern European Standard Time)0.6577053372187398",
       "text": "test2",
-      "completed": false
+      "completed": true
     },
     {
       "id": "Thu Feb 04 2021 13:56:54 GMT+0200 (Eastern European Standard Time)0.2785540276238394",
       "text": "testing 23142",
-      "completed": true
+      "completed": false
     }
   ]
 }
